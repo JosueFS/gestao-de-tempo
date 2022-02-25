@@ -1,0 +1,24 @@
+# Informações virão através da integração com a API do clickup
+type Task {
+  id: ID! #Mesmo ID do clickup, por isso não é autogenerate
+  title: String!
+  description: String
+  points: String
+  author: User!
+  assignee: User
+  begin: DateTime
+  closed: DateTime # Closed ou última vez enviada pra test?
+  #created_at
+  #updated_at
+}
+
+# EXEMPLO DE RELACIONAMENTO
+# type Movie {
+#     title: String
+#     actors: [Actor!]! @relationship(type: "ACTED_IN", direction: IN)
+# }
+
+# type Actor {
+#     name: String
+#     movies: [Movie!]! @relationship(type: "ACTED_IN", direction: OUT)
+# }
