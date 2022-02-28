@@ -1,6 +1,10 @@
 require('dotenv').config();
 const { Neo4jGraphQL } = require('@neo4j/graphql');
 const { ApolloServer } = require('apollo-server');
+const {
+  ApolloServerPluginLandingPageGraphQLPlayground,
+} = require('apollo-server-core');
+
 const neo4j = require('neo4j-driver');
 
 const typeDefs = require('./types');
@@ -15,6 +19,7 @@ const neoSchema = new Neo4jGraphQL({ typeDefs, driver });
 neoSchema.getSchema().then((schema) => {
   const server = new ApolloServer({
     schema,
+    plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
   });
 
   server.listen({ port: 4001 }).then(({ url }) => {
