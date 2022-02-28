@@ -1,5 +1,5 @@
 # Deverão ser cadastradas de acordo com o backlog
-type Techniques {
+type Technique {
   id: ID! @id
   name: String
   description: String
