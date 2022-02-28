@@ -3,7 +3,7 @@ const { Neo4jGraphQL } = require('@neo4j/graphql');
 const { ApolloServer } = require('apollo-server');
 const neo4j = require('neo4j-driver');
 
-const typeDefs = require('./src/types');
+const typeDefs = require('./types');
 
 const driver = neo4j.driver(
   process.env.NEO4J_URI,
