@@ -1,0 +1,29 @@
+# version: "3.7"
+
+# services:
+#   api:
+#     build: .
+#     container_name: gestao_de_tempo
+#     command: npm run dev
+#     ports:
+#       - 4001:4001
+#     volumes:
+#     - ./src:/usr/app/src
+#     environment:
+#       - NEO4J_URI=neo4j+s://2e2368b1.databases.neo4j.io
+#       - NEO4J_USER=neo4j
+#       - NEO4J_PASSWORD=CiAKRyFr0ZpIch8FCMAGcL5riufWsT3ErBYWeXlmAZU
+version: '3'
+
+services:
+  api:
+    build: .
+    ports:
+      - '4001:4001'
+    environment:
+      - NEO4J_URI=neo4j+s://2e2368b1.databases.neo4j.io
+      - NEO4J_USER=neo4j
+      - NEO4J_PASSWORD=CiAKRyFr0ZpIch8FCMAGcL5riufWsT3ErBYWeXlmAZU
+    command: npm run dev
+    volumes:
+      - .:/usr/app
