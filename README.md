@@ -32,14 +32,14 @@ Agora o servidor deve estar acessível em http://localhost:4000
 ## Configurações iniciais que estão faltando para finalizar o boilerplate:
 
 - [ ] Configurar babel
-- [ ] Configurar Docker
+
 
 ## Tarefas concluídas
-- [x]  Criar repositório no github            
-    Link: https://github.com/JosueFS/gestao-de-tempo            
+- [x]  Criar repositório no github
+    Link: https://github.com/JosueFS/gestao-de-tempo
 - [x]  Adicionar permissão do repositório para o time
 - [x]  Criar o banco de dados
-  - [x]  Configurar Banco no site do Neo4J                
+  - [x]  Configurar Banco no site do Neo4J
 - [x]  Montar o boilerplate e enviar pro github
   - [x]  README.md
   - [x]  .gitignore
@@ -48,3 +48,4 @@ Agora o servidor deve estar acessível em http://localhost:4000
   - [x]  Instalar as bibliotecas necessárias
   - [x]  configurar arquivos .env
   - [x]  Pegar as informações do banco de dados e configurar o servidor node
+- [x] Configurar Docker
