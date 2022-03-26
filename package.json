@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -L main"
+    "dev": "nodemon -L --exec babel-node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +15,18 @@
     "@graphql-tools/merge": "^8.2.3",
     "@neo4j/graphql": "^3.0.1",
     "apollo-server": "^3.6.3",
+    "apollo-server-express": "^3.6.6",
+    "clickup.js": "^3.0.1",
     "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "graphql": "^16.3.0",
     "neo4j-driver": "^4.4.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
     "eslint": "^8.9.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.4.0",
