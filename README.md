@@ -16,6 +16,14 @@ Link do notion: https://www.notion.so/jovens-genios-jfs/Backlog-4ffd65bee0844cce
 As configurações abaixo dessa seção:
 ![image](https://user-images.githubusercontent.com/45906601/155725494-70aee893-98dc-4210-831d-4cab275e2261.png)
 
+**É necessário gerar um token no clickUp para ter acesso a API**
+$ https://app.clickup.com/api?client_id=UQC36DXVVEQTNM46Y4R5IN4E8UO7HD6C&redirect_uri=https://global.consent.azure-apim.net/
+
+Você será direcionad a uma tela, onde escolherá seu workspace e será redirecionado para uma URL que terá o CODE 
+
+exemplo https://global.consent.azure-apim.net/?code=TJK2GM3ZNN6RVOYBL8LNC7RPITPJH7DR
+
+exemplo ---> const CODE = 'TJK2GM3ZNN6RVOYBL8LNC7RPITPJH7DR' <--- code example
 
 **Siga os passos abaixo:**
 
